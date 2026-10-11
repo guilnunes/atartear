@@ -1,21 +1,22 @@
 name: Publicar no GitHub Pages
 
+# Gera o site estático e publica o conteúdo de out/ na branch gh-pages.
+# O GitHub Pages serve essa branch em https://guilnunes.github.io/atartear/
+
 on:
   push:
     branches: [main]
   workflow_dispatch:
 
 permissions:
-  contents: read
-  pages: write
-  id-token: write
+  contents: write
 
 concurrency:
   group: pages
   cancel-in-progress: true
 
 jobs:
-  build:
+  publicar:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -29,16 +30,10 @@ jobs:
           NEXT_PUBLIC_BASE_PATH: /atartear
           NEXT_TELEMETRY_DISABLED: "1"
       - run: touch out/.nojekyll
-      - uses: actions/upload-pages-artifact@v3
+      - uses: peaceiris/actions-gh-pages@v4
         with:
-          path: out
-
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - id: deployment
-        uses: actions/deploy-pages@v4
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./out
+          publish_branch: gh-pages
+          force_orphan: true
+          commit_message: "Publica o site"
