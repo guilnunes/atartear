@@ -1,0 +1,29 @@
+.imagem,
+.vazio {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+}
+
+.imagem {
+  height: auto;
+  object-fit: cover;
+  background: var(--bg-2);
+}
+
+.vazio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  background: var(--bg-2);
+  color: var(--texto-3);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+}
+
+.vazio svg {
+  opacity: 0.55;
+}

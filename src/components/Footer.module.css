@@ -1,0 +1,83 @@
+.footer {
+  padding-top: 72px;
+  border-top: 1px solid var(--linha);
+}
+
+.grade {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 48px;
+  padding-bottom: 56px;
+}
+
+.marca {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  color: var(--logo);
+}
+
+.nome {
+  margin: 0;
+  font-family: var(--serif);
+  font-size: 28px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  line-height: 1.1;
+}
+
+.sub {
+  margin: 4px 0 0;
+  font-family: var(--serif);
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--texto-2);
+}
+
+.coluna {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.coluna :global(.rotulo) {
+  margin-bottom: 8px;
+}
+
+.coluna a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 36px;
+  color: var(--texto-2);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.coluna a:hover {
+  color: var(--texto);
+}
+
+.base {
+  padding-bottom: 32px;
+  font-size: 14px;
+  color: var(--texto-3);
+}
+
+.base p {
+  margin: 0;
+  padding-top: 24px;
+  border-top: 1px solid var(--linha);
+}
+
+@media (max-width: 760px) {
+  .grade {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .marca {
+    grid-column: 1 / -1;
+  }
+}

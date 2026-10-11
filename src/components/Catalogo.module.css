@@ -1,0 +1,90 @@
+.grade {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 56px 32px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.foto {
+  position: relative;
+  overflow: hidden;
+}
+
+.foto > * {
+  transition: transform 0.6s ease;
+}
+
+.card:hover .foto > :first-child {
+  transform: scale(1.03);
+}
+
+.selo {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  padding: 6px 12px;
+  background: var(--bg);
+  color: var(--texto);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 16px;
+}
+
+.nome {
+  margin: 0;
+  font-family: var(--serif);
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.preco {
+  margin: 0;
+  flex-shrink: 0;
+  font-size: 14px;
+  color: var(--texto-2);
+}
+
+.vazio {
+  color: var(--texto-2);
+}
+
+@media (max-width: 960px) {
+  .grade {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 40px 20px;
+  }
+}
+
+@media (max-width: 520px) {
+  .grade {
+    gap: 32px 14px;
+  }
+
+  .nome {
+    font-size: 20px;
+  }
+
+  .info {
+    flex-direction: column;
+    gap: 2px;
+  }
+}

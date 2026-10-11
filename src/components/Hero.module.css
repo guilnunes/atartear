@@ -1,0 +1,308 @@
+/* Hero dividido ao meio: metade clara (macramé) e metade escura (velas).
+   O logo fica sobre a costura e troca de cor exatamente nela. */
+
+.hero {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  height: 100vh;
+  height: 100svh;
+  min-height: 720px;
+  overflow: hidden;
+}
+
+.metade {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 140px 72px 88px;
+}
+
+.escura {
+  align-items: flex-end;
+  text-align: right;
+}
+
+/* ----- Fotos de fundo: sutis, transparentes, fundindo na cor do lado ----- */
+.fundo {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+}
+
+.fundoMacrame {
+  background-position: center bottom;
+  opacity: 0.38;
+  -webkit-mask-image: radial-gradient(ellipse 72% 66% at 50% 42%, #000 18%, transparent 82%);
+  mask-image: radial-gradient(ellipse 72% 66% at 50% 42%, #000 18%, transparent 82%);
+}
+
+.fundoVelas {
+  background-position: center 30%;
+  transform: scaleX(-1);
+  opacity: 0.55;
+  -webkit-mask-image: radial-gradient(ellipse 66% 62% at 32% 56%, #000 18%, transparent 82%);
+  mask-image: radial-gradient(ellipse 66% 62% at 32% 56%, #000 18%, transparent 82%);
+}
+
+.veu {
+  position: absolute;
+  inset: 0;
+}
+
+.veuClaro {
+  background:
+    linear-gradient(to top, rgba(242, 238, 230, 0.94) 0%, rgba(242, 238, 230, 0.6) 34%, rgba(242, 238, 230, 0) 62%),
+    linear-gradient(to bottom, rgba(242, 238, 230, 0.7) 0%, rgba(242, 238, 230, 0) 18%);
+}
+
+.veuEscuro {
+  background:
+    linear-gradient(to top, rgba(14, 16, 19, 0.92) 0%, rgba(14, 16, 19, 0.5) 32%, rgba(14, 16, 19, 0) 58%),
+    linear-gradient(to bottom, rgba(14, 16, 19, 0.7) 0%, rgba(14, 16, 19, 0) 18%);
+}
+
+.vinheta {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(ellipse 80% 78% at 50% 50%, rgba(12, 13, 15, 0) 52%, rgba(12, 13, 15, 0.16) 78%, rgba(12, 13, 15, 0.34) 100%);
+}
+
+/* ----- Texto de cada metade ----- */
+.conteudo {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 420px;
+}
+
+.escura .conteudo {
+  align-items: flex-end;
+}
+
+.clara .conteudo :global(.link-seta) {
+  align-self: flex-start;
+}
+
+.frase {
+  margin: 0;
+  font-size: 17px;
+  line-height: 1.6;
+  color: var(--texto-2);
+}
+
+/* ----- Logo sobre a costura ----- */
+.logo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 520px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 22px;
+  pointer-events: none;
+}
+
+.emblema {
+  position: relative;
+  width: 168px;
+  height: 168px;
+}
+
+.emblema svg {
+  position: absolute;
+  inset: 0;
+}
+
+.emblemaClaro {
+  color: var(--fio);
+  clip-path: inset(0 50% 0 0);
+}
+
+.emblemaEscuro {
+  color: var(--creme-logo);
+  clip-path: inset(0 0 0 50%);
+}
+
+.nome {
+  position: relative;
+  width: 100%;
+  height: 72px;
+}
+
+.nomeClaro,
+.nomeEscuro {
+  margin: 0;
+  width: 100%;
+  /* Compensa o espaçamento após a última letra para centralizar o nome
+     exatamente sobre a costura. */
+  padding-left: 0.08em;
+  text-align: center;
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: 66px;
+  line-height: 72px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.nomeClaro {
+  color: var(--fio);
+  clip-path: inset(0 50% 0 0);
+}
+
+.nomeEscuro {
+  position: absolute;
+  inset: 0;
+  color: var(--creme-logo);
+  clip-path: inset(0 0 0 50%);
+}
+
+.assinatura {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  width: 100%;
+  font-family: var(--serif);
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+}
+
+/* As duas palavras ficam exatamente a 20px da costura; a da esquerda
+   desconta o espaçamento que sobra depois da última letra. */
+.assinaturaClara {
+  text-align: right;
+  padding-right: calc(20px - 0.24em);
+  color: var(--fio-2);
+}
+
+.assinaturaEscura {
+  text-align: left;
+  padding-left: 20px;
+  color: var(--creme-logo);
+}
+
+/* ----- Telas médias: o logo encolhe para não invadir os textos ----- */
+@media (max-width: 1100px) and (min-width: 861px) {
+  .metade {
+    padding: 140px 40px 72px;
+  }
+
+  .logo {
+    width: 420px;
+    transform: translate(-50%, -62%) scale(0.82);
+  }
+}
+
+/* ----- Mobile: metades empilhadas, costura horizontal ----- */
+@media (max-width: 860px) {
+  .hero {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    min-height: 680px;
+  }
+
+  .metade {
+    padding: 0 24px 40px;
+  }
+
+  .clara {
+    justify-content: flex-start;
+    padding-top: 96px;
+  }
+
+  .clara .conteudo,
+  .escura .conteudo {
+    gap: 12px;
+  }
+
+  .clara .frase,
+  .escura .frase {
+    display: none;
+  }
+
+  .fundoMacrame {
+    background-position: center 30%;
+    -webkit-mask-image: radial-gradient(ellipse 72% 70% at 55% 45%, #000 18%, transparent 82%);
+    mask-image: radial-gradient(ellipse 72% 70% at 55% 45%, #000 18%, transparent 82%);
+  }
+
+  .fundoVelas {
+    background-position: center 45%;
+    transform: none;
+    -webkit-mask-image: radial-gradient(ellipse 66% 70% at 32% 58%, #000 18%, transparent 82%);
+    mask-image: radial-gradient(ellipse 66% 70% at 32% 58%, #000 18%, transparent 82%);
+  }
+
+  .veuClaro {
+    background: linear-gradient(to right, rgba(242, 238, 230, 0.9) 0%, rgba(242, 238, 230, 0.55) 50%, rgba(242, 238, 230, 0.1) 100%);
+  }
+
+  .veuEscuro {
+    background:
+      linear-gradient(to left, rgba(14, 16, 19, 0.88) 0%, rgba(14, 16, 19, 0.45) 55%, rgba(14, 16, 19, 0) 100%),
+      linear-gradient(to bottom, rgba(14, 16, 19, 0.85) 0%, rgba(14, 16, 19, 0) 34%);
+  }
+
+  /* Centro do emblema sobre a costura horizontal (50% da altura). */
+  .logo {
+    top: calc(50% - 56px);
+    transform: translateX(-50%);
+    width: 100%;
+    gap: 12px;
+  }
+
+  .emblema,
+  .emblema svg {
+    width: 112px;
+    height: 112px;
+  }
+
+  .emblemaClaro {
+    clip-path: inset(0 0 50% 0);
+  }
+
+  .emblemaEscuro {
+    clip-path: inset(50% 0 0 0);
+  }
+
+  .nome {
+    height: auto;
+  }
+
+  .nomeClaro {
+    position: absolute;
+    clip-path: inset(0 0 0 100%);
+  }
+
+  .nomeEscuro {
+    position: static;
+    clip-path: none;
+    font-size: 40px;
+    line-height: 1;
+  }
+
+  .assinatura {
+    display: flex;
+    justify-content: center;
+    gap: 0.6em;
+    font-size: 15px;
+  }
+
+  .assinaturaClara,
+  .assinaturaEscura {
+    padding: 0;
+    color: var(--creme-logo);
+  }
+
+  .assinaturaClara::after {
+    content: "·";
+    padding-left: 0.6em;
+  }
+}

@@ -1,0 +1,116 @@
+.peca {
+  padding-top: 32px;
+  padding-bottom: 120px;
+}
+
+.caminho {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 40px;
+  font-size: 13px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--texto-3);
+}
+
+.caminho a {
+  color: var(--texto-2);
+  text-decoration: none;
+}
+
+.caminho a:hover {
+  color: var(--texto);
+}
+
+.grade {
+  display: grid;
+  grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
+  gap: 72px;
+  align-items: start;
+}
+
+.galeria {
+  position: sticky;
+  top: 104px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 8px;
+}
+
+.nome {
+  margin: 0;
+  font-family: var(--serif);
+  font-size: clamp(36px, 4.4vw, 56px);
+  font-weight: 500;
+  line-height: 1.05;
+  letter-spacing: 0.02em;
+}
+
+.preco {
+  margin: 0;
+  font-size: 20px;
+  color: var(--texto-2);
+}
+
+.descricao {
+  margin: 8px 0 0;
+  color: var(--texto-2);
+}
+
+.acoes {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.detalhes {
+  margin: 24px 0 0;
+  border-top: 1px solid var(--linha);
+}
+
+.detalhes div {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--linha);
+  font-size: 15px;
+}
+
+.detalhes dt {
+  color: var(--texto-3);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 500;
+  padding-top: 3px;
+}
+
+.detalhes dd {
+  margin: 0;
+  text-align: right;
+}
+
+@media (max-width: 860px) {
+  .grade {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .galeria {
+    position: static;
+  }
+
+  .caminho {
+    margin-bottom: 24px;
+  }
+
+  .peca {
+    padding-bottom: 72px;
+  }
+}

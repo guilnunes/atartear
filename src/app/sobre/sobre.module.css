@@ -1,0 +1,107 @@
+.intro {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
+.dupla {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.lado {
+  position: relative;
+  min-height: 560px;
+  display: flex;
+  align-items: flex-end;
+  padding: 72px var(--gutter);
+  overflow: hidden;
+}
+
+/* O texto da metade clara alinha com a margem do resto da página. */
+.lado:first-child {
+  padding-left: max(var(--gutter), calc((100vw - var(--max)) / 2 + var(--gutter)));
+}
+
+.fundo {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.3;
+  -webkit-mask-image: radial-gradient(ellipse 70% 70% at 50% 40%, #000 15%, transparent 80%);
+  mask-image: radial-gradient(ellipse 70% 70% at 50% 40%, #000 15%, transparent 80%);
+}
+
+.fundoVelas {
+  opacity: 0.45;
+  background-position: 30% 40%;
+}
+
+.texto {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 440px;
+}
+
+.texto p:not(:global(.rotulo)) {
+  margin: 0;
+  color: var(--texto-2);
+}
+
+.texto :global(.link-seta) {
+  align-self: flex-start;
+}
+
+.subtitulo {
+  margin: 0;
+  font-family: var(--serif);
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+.fecho {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  text-align: center;
+  color: var(--fio);
+}
+
+.fecho p {
+  margin: 0;
+  max-width: 560px;
+  font-family: var(--serif);
+  font-size: 28px;
+  line-height: 1.3;
+}
+
+@media (max-width: 860px) {
+  .intro {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+
+  .dupla {
+    grid-template-columns: 1fr;
+  }
+
+  .lado,
+  .lado:first-child {
+    min-height: 420px;
+    padding: 56px var(--gutter);
+  }
+
+  .fecho {
+    padding-top: 72px;
+    padding-bottom: 72px;
+  }
+}

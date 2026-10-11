@@ -1,0 +1,89 @@
+.contato {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+
+.topo {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 72px;
+}
+
+.canais {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid var(--linha);
+}
+
+.canais li + li {
+  border-left: 1px solid var(--linha);
+}
+
+.canal {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  height: 100%;
+  padding: 40px 32px 40px 0;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.canais li + li .canal {
+  padding-left: 32px;
+}
+
+.canal:hover .valor {
+  color: var(--acento);
+}
+
+.valor {
+  font-family: var(--serif);
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.2;
+  word-break: break-word;
+  transition: color 0.2s;
+}
+
+.detalhe {
+  color: var(--texto-2);
+  font-size: 15px;
+}
+
+.local {
+  margin: 56px 0 0;
+  color: var(--texto-3);
+  font-size: 14px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 860px) {
+  .contato {
+    padding-top: 56px;
+    padding-bottom: 72px;
+  }
+
+  .topo {
+    margin-bottom: 40px;
+  }
+
+  .canais {
+    grid-template-columns: 1fr;
+  }
+
+  .canais li + li {
+    border-left: none;
+    border-top: 1px solid var(--linha);
+  }
+
+  .canal,
+  .canais li + li .canal {
+    padding: 28px 0;
+  }
+}

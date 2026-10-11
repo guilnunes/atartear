@@ -1,0 +1,181 @@
+/* ===== Marca Atartear: tokens ===== */
+:root {
+  --linho: #f2eee6;
+  --linho-2: #e8e1d5;
+  --fio: #2b2620;
+  --fio-2: #4a4239;
+  --fio-3: #6b6157;
+  --noite: #0e1013;
+  --noite-2: #171a1f;
+  --cera: #f6e7cc;
+  --cera-2: #cdbfa9;
+  --cera-3: #a89c8a;
+  --creme-logo: #f7eecd;
+  --chama: #e3a456;
+
+  --serif: "Cormorant Garamond", "Times New Roman", serif;
+  --sans: "Jost", system-ui, sans-serif;
+
+  --gutter: clamp(16px, 4vw, 72px);
+  --max: 1280px;
+}
+
+.tema-claro {
+  --bg: var(--linho);
+  --bg-2: var(--linho-2);
+  --texto: var(--fio);
+  --texto-2: var(--fio-2);
+  --texto-3: var(--fio-3);
+  --linha: rgba(43, 38, 32, 0.18);
+  --acento: var(--fio);
+  --logo: var(--fio);
+  background: var(--bg);
+  color: var(--texto);
+}
+
+.tema-escuro {
+  --bg: var(--noite);
+  --bg-2: var(--noite-2);
+  --texto: var(--cera);
+  --texto-2: var(--cera-2);
+  --texto-3: var(--cera-3);
+  --linha: rgba(246, 231, 204, 0.16);
+  --acento: var(--chama);
+  --logo: var(--creme-logo);
+  background: var(--bg);
+  color: var(--texto);
+}
+
+/* ===== Base ===== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--sans);
+  font-size: 17px;
+  line-height: 1.6;
+  background: var(--noite);
+  color: var(--cera);
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid var(--chama);
+  outline-offset: 3px;
+}
+
+.visualmente-oculto {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+}
+
+/* ===== Tipografia utilitária ===== */
+.rotulo {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--texto-3);
+}
+
+.titulo {
+  margin: 0;
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: clamp(40px, 6vw, 72px);
+  line-height: 1.05;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.lead {
+  margin: 0;
+  max-width: 560px;
+  font-size: 18px;
+  color: var(--texto-2);
+}
+
+.link-seta {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 44px;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--acento);
+  border-bottom: 1px solid currentColor;
+  transition: opacity 0.2s;
+}
+
+.link-seta:hover {
+  opacity: 0.7;
+}
+
+/* ===== Botões ===== */
+.botao {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 52px;
+  padding: 0 28px;
+  border: 1px solid var(--texto);
+  border-radius: 0;
+  background: var(--texto);
+  color: var(--bg);
+  font: inherit;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.botao:hover {
+  opacity: 0.85;
+}
+
+.botao-contorno {
+  background: transparent;
+  color: var(--texto);
+}
+
+.botao[aria-disabled="true"],
+.botao:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}

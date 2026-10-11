@@ -1,0 +1,33 @@
+{
+  "name": "atartear",
+  "version": "1.0.0",
+  "description": "Site da Atartear: macramé e velas artesanais",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "npx serve out"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guilnunes/atartear.git"
+  },
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/guilnunes/atartear/issues"
+  },
+  "homepage": "https://github.com/guilnunes/atartear#readme",
+  "dependencies": {
+    "@fontsource/cormorant-garamond": "^5.3.0",
+    "@fontsource/jost": "^5.3.0",
+    "next": "^16.4.0",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "typescript": "^5.9.3"
+  },
+  "private": true
+}

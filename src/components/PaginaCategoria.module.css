@@ -1,0 +1,26 @@
+.pagina {
+  min-height: 100vh;
+}
+
+.topo {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-top: 96px;
+  padding-bottom: 72px;
+}
+
+.respiro {
+  height: 120px;
+}
+
+@media (max-width: 760px) {
+  .topo {
+    padding-top: 56px;
+    padding-bottom: 40px;
+  }
+
+  .respiro {
+    height: 72px;
+  }
+}
