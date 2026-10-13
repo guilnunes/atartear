@@ -1,0 +1,7 @@
+:HL["/atartear/_next/static/chunks/1qzr9kjkv1dqv.css","style"]
+:HC["/",""]
+:HL["/atartear/_next/static/chunks/0g_-e48imp31h.css","style"]
+:HL["/atartear/img/vela-torso.jpg","image"]
+2:[["children",{"s":"__PAGE__","h":160}]]
+1:[["children",{"s":"velas","h":96,"c":"$Q2"}]]
+0:{"b":"opp1WZ05EjlzQBPtCKXYF","t":{"t":{"s":"","h":80,"c":"$Q1"}}}

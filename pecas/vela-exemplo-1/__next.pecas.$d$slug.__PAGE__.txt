@@ -1,0 +1,42 @@
+1:"$Sreact.fragment"
+2:"/atartear/_next/static/chunks/0umf92h1sb77c.js"
+3:I[39756,["$2"],"default"]
+4:I[37457,["$2"],"default"]
+5:"/atartear/_next/static/chunks/1b4a78jz5yl33.js"
+6:I[2971,["$2","$5"],"Header"]
+7:I[22016,["$2","$5"],""]
+1a:"ViewportBoundary"
+1b:I[97367,["$2"],"$1a"]
+1c:"MetadataBoundary"
+1d:I[97367,["$2"],"$1c"]
+1e:"$Sreact.suspense"
+1f:I[27201,["$2"],"IconMark"]
+:HL["/atartear/_next/static/chunks/1qzr9kjkv1dqv.css","style"]
+:HL["/atartear/_next/static/chunks/0g_-e48imp31h.css","style"]
+9:X
+c:X
+c:C
+f:[["children",{"s":"__PAGE__","h":160,"d":{"r":["$","$1","c",{"children":[["$","div",null,{"className":"tema-escuro","children":[["$","$L6",null,{"variante":"escuro"}],["$","main",null,{"className":"container AwDcna_peca","children":[["$","nav",null,{"aria-label":"Caminho","className":"AwDcna_caminho","children":[["$","$L7",null,{"href":"/velas/","children":"Velas"}],["$","span",null,{"aria-hidden":"true","children":"/"}],["$","span",null,{"aria-current":"page","children":"Vela de exemplo 1"}]]}],["$","div",null,{"className":"AwDcna_grade","children":[["$","div",null,{"className":"AwDcna_galeria","children":["$","div",null,{"className":"qU-8sW_vazio","role":"img","aria-label":"Vela de exemplo 1: foto em breve","children":[["$","svg",null,{"width":64,"height":64,"viewBox":"-4 -4 268 268","aria-hidden":true,"children":["$","g",null,{"fill":"none","stroke":"currentColor","strokeWidth":4,"children":[["$","circle",null,{"cx":"130","cy":"80","r":"80"}],["$","circle",null,{"cx":"80","cy":"130","r":"80"}],["$","circle",null,{"cx":"180","cy":"130","r":"80"}],["$","circle",null,{"cx":"130","cy":"180","r":"80"}]]}]}],["$","span",null,{"children":"Foto em breve"}]]}]}],["$","div",null,{"className":"AwDcna_info","children":[["$","p",null,{"className":"rotulo","children":"Velas"}],["$","h1",null,{"className":"AwDcna_nome","children":"Vela de exemplo 1"}],["$","p",null,{"className":"AwDcna_preco","children":"Preço sob consulta"}],["$","p",null,{"className":"AwDcna_descricao","children":"Peça fictícia, usada só para visualizar o layout do catálogo. Substituir pelas peças reais."}],["$","div",null,{"className":"AwDcna_acoes","children":[["$","a",null,{"className":"botao","href":"https://wa.me/5500000000000?text=Ol%C3%A1!%20Tenho%20interesse%20na%20pe%C3%A7a%20%22Vela%20de%20exemplo%201%22%20que%20vi%20no%20site%20da%20Atartear%3A%20https%3A%2F%2Fguilnunes.github.io%2Fatartear%2Fpecas%2Fvela-exemplo-1%2F","target":"_blank","rel":"noopener noreferrer","children":"Pedir pelo WhatsApp"}],["$","span",null,{"className":"botao botao-contorno","aria-disabled":"true","children":"Compra online em breve"}]]}],["$","dl",null,{"className":"AwDcna_detalhes","children":[null,null,["$","div",null,{"children":[["$","dt",null,{"children":"Disponibilidade"}],["$","dd",null,{"children":"Peça única"}]]}]]}]]}]]}]]}],["$","footer",null,{"className":"S6Hkya_footer tema-escuro","children":[["$","div",null,{"className":"container S6Hkya_grade","children":[["$","div",null,{"className":"S6Hkya_marca","children":[["$","svg",null,{"width":56,"height":56,"viewBox":"-4 -4 268 268","aria-hidden":true,"children":["$","g",null,{"fill":"none","stroke":"currentColor","strokeWidth":4,"children":[["$","circle",null,{"cx":"130","cy":"80","r":"80"}],["$","circle",null,{"cx":"80","cy":"130","r":"80"}],["$","circle",null,{"cx":"180","cy":"130","r":"80"}],["$","circle",null,{"cx":"130","cy":"180","r":"80"}]]}]}],["$","div",null,{"children":[["$","p",null,{"className":"S6Hkya_nome","children":"Atartear"}],["$","p",null,{"className":"S6Hkya_sub","children":"Macramé · Velas"}]]}]]}],["$","nav",null,{"aria-label":"Rodapé","className":"S6Hkya_coluna","children":[["$","p",null,{"className":"rotulo","children":"Navegar"}],"$L10","$L11","$L12","$L13"]}],"$L14"]}],"$L15"]}]]}],["$L16","$L17"],"$L18"]}],"p":"$@19","v":null,"s":"$9"}}]]
+d:[["children",{"s":{"n":"slug","t":"d","k":"vela-exemplo-1","s":[]},"h":65632,"d":{"r":["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","template":["$","$L4",null,{}]}]]}],"p":"$@e","v":"$c","s":"$9"},"c":"$Qf"}]]
+a:[["children",{"s":"pecas","h":131168,"d":{"r":["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","template":["$","$L4",null,{}]}]]}],"p":"$@b","v":"$c","s":"$9"},"c":"$Qd"}]]
+0:{"t":{"t":{"s":"","h":131152,"d":{"r":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/atartear/_next/static/chunks/1qzr9kjkv1dqv.css","precedence":"next"}],["$","script","script-0",{"src":"/atartear/_next/static/chunks/0umf92h1sb77c.js","async":true}]],["$","html",null,{"lang":"pt-BR","children":["$","body",null,{"children":["$","$L3",null,{"parallelRouterKey":"children","template":["$","$L4",null,{}],"notFound":[["$","div",null,{"className":"tema-escuro","style":{"minHeight":"100vh"},"children":[["$","$L6",null,{"variante":"escuro"}],["$","main",null,{"className":"container","style":{"display":"flex","flexDirection":"column","alignItems":"center","gap":24,"padding":"120px 16px","textAlign":"center"},"children":[["$","svg",null,{"width":72,"height":72,"viewBox":"-4 -4 268 268","aria-hidden":true,"children":["$","g",null,{"fill":"none","stroke":"currentColor","strokeWidth":4,"children":[["$","circle",null,{"cx":"130","cy":"80","r":"80"}],["$","circle",null,{"cx":"80","cy":"130","r":"80"}],["$","circle",null,{"cx":"180","cy":"130","r":"80"}],["$","circle",null,{"cx":"130","cy":"180","r":"80"}]]}]}],["$","h1",null,{"className":"titulo","children":"Página não encontrada"}],["$","p",null,{"className":"lead","children":"Esta peça ou página não existe mais, ou o endereço mudou."}],["$","$L7",null,{"href":"/","className":"link-seta","children":"Voltar ao início"}]]}]]}],[["$","link","0",{"rel":"stylesheet","href":"/atartear/_next/static/chunks/0g_-e48imp31h.css","precedence":"next"}]]]}]}]}]]}],"p":"$@8","v":null,"s":"$9"},"c":"$Qa"},"h":{"r":["$","$1","h",{"children":[null,["$","$L1b",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","2",{"name":"theme-color","content":"#0e1013"}]]}],["$","$L1d",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$1e",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Vela de exemplo 1 · Atartear"}],["$","meta","1",{"name":"description","content":"Peça de exemplo para testar o catálogo."}],["$","meta","2",{"property":"og:title","content":"Atartear"}],["$","meta","3",{"property":"og:description","content":"Macramé e velas artesanais, feitos à mão."}],["$","meta","4",{"property":"og:locale","content":"pt_BR"}],["$","meta","5",{"property":"og:type","content":"website"}],["$","meta","6",{"name":"twitter:card","content":"summary"}],["$","meta","7",{"name":"twitter:title","content":"Atartear"}],["$","meta","8",{"name":"twitter:description","content":"Macramé e velas artesanais, feitos à mão."}],["$","link","9",{"rel":"icon","href":"/atartear/favicon.svg"}],["$","$L1f","10",{}]]}]}],null]}],null]}],"p":"$@20","v":null,"s":"$9"}},"a":"$@21","u":"$@22","b":"opp1WZ05EjlzQBPtCKXYF"}
+23:I[97367,["$2"],"OutletBoundary"]
+10:["$","$L7",null,{"href":"/macrame/","children":"Macramé"}]
+11:["$","$L7",null,{"href":"/velas/","children":"Velas"}]
+12:["$","$L7",null,{"href":"/sobre/","children":"Sobre"}]
+13:["$","$L7",null,{"href":"/contato/","children":"Contato"}]
+14:["$","div",null,{"className":"S6Hkya_coluna","children":[["$","p",null,{"className":"rotulo","children":"Contato"}],["$","a",null,{"href":"https://wa.me/5500000000000?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Atartear.","target":"_blank","rel":"noopener noreferrer","children":"WhatsApp"}],["$","a",null,{"href":"https://instagram.com/[instagram]","target":"_blank","rel":"noopener noreferrer","children":"Instagram"}],["$","a",null,{"href":"mailto:[email@atartear.com.br]","children":"[email@atartear.com.br]"}]]}]
+15:["$","div",null,{"className":"container S6Hkya_base","children":["$","p",null,{"children":["© ",2026," Atartear. Feito à mão."]}]}]
+16:["$","link","0",{"rel":"stylesheet","href":"/atartear/_next/static/chunks/0g_-e48imp31h.css","precedence":"next"}]
+17:["$","script","script-0",{"src":"/atartear/_next/static/chunks/1b4a78jz5yl33.js","async":true}]
+18:["$","$L23",null,{"children":["$","$1e",null,{"name":"Next.MetadataOutlet","children":"$@24"}]}]
+9:300
+24:null
+22:true
+9:C
+21:0
+e:"$undefined"
+b:"$undefined"
+8:"$undefined"
+20:"$undefined"
+19:"$undefined"
