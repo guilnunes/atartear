@@ -2,7 +2,9 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { linkInstagram } from "@/config/site";
 import { Emblema } from "./Emblema";
+import { IconeInstagram } from "./IconeInstagram";
 import styles from "./Header.module.css";
 
 export type VarianteHeader = "dividido" | "claro" | "escuro";
@@ -24,6 +26,18 @@ export function Header({ variante }: { variante: VarianteHeader }) {
     window.addEventListener("keydown", fechar);
     return () => window.removeEventListener("keydown", fechar);
   }, [aberto]);
+
+  const instagram = (
+    <a
+      href={linkInstagram()}
+      target="_blank"
+      rel="noopener noreferrer"
+      className={styles.instagram}
+      aria-label="Instagram da Atartear (abre em nova aba)"
+    >
+      <IconeInstagram />
+    </a>
+  );
 
   const botaoMenu = (
     <button
@@ -52,9 +66,13 @@ export function Header({ variante }: { variante: VarianteHeader }) {
             <div className={styles.metadeEscura}>
               <Link href="/velas/">Velas</Link>
               <Link href="/contato/">Contato</Link>
+              {instagram}
             </div>
           </nav>
-          <div className={styles.soMovel}>{botaoMenu}</div>
+          <div className={`${styles.soMovel} ${styles.movelDividido}`}>
+            {botaoMenu}
+            {instagram}
+          </div>
         </header>
       ) : (
         <header className={`${styles.header} ${styles.barra} tema-${variante}`}>
@@ -69,8 +87,12 @@ export function Header({ variante }: { variante: VarianteHeader }) {
                   {l.rotulo}
                 </Link>
               ))}
+              {instagram}
             </nav>
-            <div className={styles.soMovel}>{botaoMenu}</div>
+            <div className={`${styles.soMovel} ${styles.movelBarra}`}>
+              {instagram}
+              {botaoMenu}
+            </div>
           </div>
         </header>
       )}
@@ -91,6 +113,9 @@ export function Header({ variante }: { variante: VarianteHeader }) {
                 {l.rotulo}
               </Link>
             ))}
+            <a href={linkInstagram()} target="_blank" rel="noopener noreferrer" className={styles.instagramMenu}>
+              <IconeInstagram tamanho={26} /> Instagram
+            </a>
           </nav>
           <Emblema tamanho={56} espessura={4} className={styles.emblemaMenu} />
         </div>

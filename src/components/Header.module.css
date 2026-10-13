@@ -94,6 +94,44 @@
   color: var(--texto);
 }
 
+/* ----- Instagram ----- */
+.navDividida a.instagram,
+.navBarra a.instagram,
+.instagram {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  margin-right: -12px;
+  color: inherit;
+  transition: opacity 0.2s;
+}
+
+.metadeEscura .instagram {
+  margin-left: -8px;
+}
+
+.navBarra .instagram {
+  margin-left: -12px;
+  color: var(--texto-2);
+}
+
+.instagram:hover {
+  opacity: 0.65;
+}
+
+.navMovel a.instagramMenu {
+  gap: 14px;
+  margin-top: 16px;
+  border-bottom: none;
+  font-family: var(--sans);
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  color: var(--texto-2);
+}
+
 /* ----- Menu móvel ----- */
 .soMovel {
   display: none;
@@ -169,5 +207,25 @@
 
   .dividido .soMovel {
     color: var(--fio);
+  }
+
+  .movelDividido,
+  .movelBarra {
+    display: flex;
+    align-items: center;
+  }
+
+  /* Home no celular: menu à esquerda, Instagram à direita, ambos sobre a metade clara. */
+  .movelDividido {
+    justify-content: space-between;
+  }
+
+  .movelDividido .instagram {
+    margin-right: 0;
+  }
+
+  .movelBarra .instagram {
+    margin-right: 0;
+    color: var(--texto-2);
   }
 }
